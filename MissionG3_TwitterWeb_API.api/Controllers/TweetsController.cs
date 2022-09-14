@@ -56,7 +56,7 @@ namespace MissionG3_TwitterWeb_API.api.Controllers
             }
             catch (Exception ex)
             {
-                _logger.LogError("GetTwitterAccessToken", ex);
+                _logger.LogError("GetReverseTimelineTweets", ex);
                 return new OperationResult<object>(false, CommonMessage.DefaultErrorMessage);
             }
         }

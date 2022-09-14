@@ -101,7 +101,7 @@ namespace MissionG3_TwitterWeb_API.api.Controllers
             }
             catch (Exception ex)
             {
-                _logger.LogError("GetTwitterAccessToken", ex);
+                _logger.LogError("GetTwitterAuthUser", ex);
                 return new OperationResult<CommonModel<TwitterUser>>(false, CommonMessage.DefaultErrorMessage);
             }
         }
